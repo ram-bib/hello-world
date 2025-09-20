@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Test Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #fff;
+      color: #202124;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo {
+      font-size: 80px;
+      font-weight: bold;
+    }
+    .logo span:nth-child(1) { color: #4285F4; }
+    .logo span:nth-child(2) { color: #EA4335; }
+    .logo span:nth-child(3) { color: #FBBC05; }
+    .logo span:nth-child(4) { color: #4285F4; }
+    .logo span:nth-child(5) { color: #34A853; }
+    .logo span:nth-child(6) { color: #EA4335; }
+
+    .search-box {
+      margin-top: 30px;
+      display: flex;
+      width: 100%;
+      max-width: 500px;
+      border: 1px solid #dfe1e5;
+      border-radius: 24px;
+      padding: 10px 15px;
+    }
+    .search-box input {
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+    .buttons input {
+      margin: 5px;
+      padding: 8px 16px;
+      border: 1px solid #f8f9fa;
+      border-radius: 4px;
+      background-color: #f8f9fa;
+      cursor: pointer;
+    }
+    .buttons input:hover {
+      border: 1px solid #dadce0;
+    }
+
+    footer {
+      background: #f2f2f2;
+      padding: 15px 30px;
+      font-size: 14px;
+      color: #70757a;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    footer .left {
+      margin-bottom: 10px;
+    }
+    footer a {
+      color: #70757a;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="logo">
+      <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+    </div>
+
+    <form class="search-box" id="search" action="https://www.google.com/search" method="get">
+      <input type="text" name="q" placeholder="Search Google...">
+    </form>
+
+    <div class="buttons">
+      <input type="submit" value="Google Search" form="search">
+      <input type="submit" value="I'm Feeling Lucky" form="search">
+    </div>
+  </main>
+
+  <footer>
+    <div class="left">India</div>
+    <div class="right">
+      <a href="#">About</a>
+      <a href="#">Advertising</a>
+      <a href="#">Business</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Settings</a>
+    </div>
+  </footer>
+
+  <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DgL000008ezbI',
+				'Github_Messaging_Setting',
+				'https://orgfarm-f94f810e56-dev-ed.develop.my.site.com/ESWGithubMessagingSetti1758382381182',
+				{
+					scrt2URL: 'https://orgfarm-f94f810e56-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://orgfarm-f94f810e56-dev-ed.develop.my.site.com/ESWGithubMessagingSetti1758382381182/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+</body>
+</html>
